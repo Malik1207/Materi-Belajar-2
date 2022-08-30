@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sticker</title>
+</head>
+<body>
+    
+    <div class="sticker" id="sticker"></div>
+    
+    <script>
+        var x = 0;
+        var y = 0;
+
+        setInterval(function(){
+            
+            x -= 160
+            if(x == -640) {
+                x = 0;
+                y -= 160;
+            } else {
+                if(y == -480) {
+                    y = 0;
+                }
+            }
+
+            document.getElementById('sticker').style.backgroundPositionY = String(y) + "px";
+            document.getElementById('sticker').style.backgroundPositionX = String(x) + "px";
+            
+        }, 100);
+    </script>
+    
+</body>
+</html>

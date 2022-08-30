@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array</title>
+</head>
+<body>
+    
+    <script>
+        var produk1 = "Tv";
+        var produk2 = "Kamera";
+        var produk3 = "Hp";
+
+        var arr_products = ['Tv', 'Kamera', 'Hp'];
+        var arr_products = [1, 'Kamera', true, 2.5];
+
+        // document.write(`${produk1}<br>`);
+        // document.write(`${produk2}<br>`);
+        // document.write(`${produk3}<br>`);
+
+        // document.write(arr_products + '<br>');
+        // document.write(arr_products[1]);
+
+        // For
+        document.write("<ol>");
+        for(let i = 0; i < arr_products.length; i++){
+            document.write(`<li>${ arr_products[i] }</li>`);
+        }
+        document.write("</ol>");
+
+        document.write("<ol>");
+        arr_products.forEach((data) => {
+            document.write(`<li>${data}</li>`);
+        });
+        document.write("</ol>");
+        
+    </script>
+    
+</body>
+</html>
