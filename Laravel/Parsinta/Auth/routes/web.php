@@ -8,10 +8,10 @@ use Illuminate\Support\Facades\Route;
 
 
 Route::get('/', action: HomeController::class)->name(name: 'home');
-Route :: get('/dashboard', DashboardController :: class)->middleware('auth')->name('dashboard');
-Route :: post('/logout', LogoutController :: class)->middleware('auth')->name('logout');
+Route::get('/dashboard', DashboardController::class)->middleware('auth')->name('dashboard');
+Route::post('/logout', LogoutController::class)->middleware('auth')->name('logout');
 
-Route::middleware('guest')->group(function() {
+Route::middleware('guest')->group(function () {
    Route::get('register', [RegisterController::class, 'create'])->name('register');
    Route::post('register', [RegisterController::class, 'store']);
    Route::get('login', [LoginController::class, 'create'])->name('login');
