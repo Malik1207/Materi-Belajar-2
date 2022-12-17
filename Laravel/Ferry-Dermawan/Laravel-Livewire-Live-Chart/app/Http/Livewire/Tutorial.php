@@ -14,10 +14,9 @@ class Tutorial extends Component
     {
         $products = Product::latest()->limit(10)->get();
         foreach ($products as $item) {
-            $data['label'][] = $item->created_at->format('H:i:s');
+            $data['label'][] = $item->created_at->format('Y-M-D H:i:s');
             $data['data'][] = (int) $item->income;
         }
-
         $this->products = json_encode($data);
         // dd($this->products);
     }
@@ -32,7 +31,7 @@ class Tutorial extends Component
     {
         $products = Product::latest()->limit(10)->get();
         foreach ($products as $item) {
-            $data['label'][] = $item->created_at->format('H:i:s');
+            $data['label'][] = $item->created_at->format('Y-M-D H:i:s');
             $data['data'][] = (int) $item->income;
         }
 

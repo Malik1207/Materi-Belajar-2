@@ -46,7 +46,7 @@ class ProductController extends Controller
                                 </form>
                             </div>
                         </div>
-                    </>
+                    </div>
                 ';
                 })
                 ->rawColumns(['action'])

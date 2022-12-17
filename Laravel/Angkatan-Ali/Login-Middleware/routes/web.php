@@ -18,7 +18,7 @@ use Illuminate\Support\Facades\Route;
 //     return view('welcome');
 // });
 
-Route::get('/login', [MahasiswaController::class,'login']);
+Route::get('/', [MahasiswaController::class,'login']);
 Route::post('/login', [MahasiswaController::class,'prosesLogin']);
 
 Route::get('/logout', [MahasiswaController::class,'logout']);

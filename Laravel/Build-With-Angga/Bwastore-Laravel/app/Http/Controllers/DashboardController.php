@@ -19,6 +19,7 @@ class DashboardController extends Controller
         $revenue = $transactions->get()->reduce(function ($carry, $item) {
             return $carry + $item->price;
         });
+        
         $customer = User::count();
 
         return view('pages.dashboard', [

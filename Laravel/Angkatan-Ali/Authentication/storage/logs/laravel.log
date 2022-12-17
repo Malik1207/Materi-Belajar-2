@@ -167,3 +167,127 @@
 #69 /home/abdmalik/laravel/authentication/vendor/laravel/framework/src/Illuminate/Foundation/resources/server.php(16): require_once('...')
 #70 {main}
 "} 
+[2022-11-22 06:00:50] local.ERROR: The "--columns" option does not exist. {"exception":"[object] (Symfony\\Component\\Console\\Exception\\RuntimeException(code: 0): The \"--columns\" option does not exist. at /home/abdmalik1207/Documents/Pembelajaran-2/Laravel/Angkatan-Ali/Authentication/vendor/symfony/console/Input/ArgvInput.php:220)
+[stacktrace]
+#0 /home/abdmalik1207/Documents/Pembelajaran-2/Laravel/Angkatan-Ali/Authentication/vendor/symfony/console/Input/ArgvInput.php(147): Symfony\\Component\\Console\\Input\\ArgvInput->addLongOption()
+#1 /home/abdmalik1207/Documents/Pembelajaran-2/Laravel/Angkatan-Ali/Authentication/vendor/symfony/console/Input/ArgvInput.php(82): Symfony\\Component\\Console\\Input\\ArgvInput->parseLongOption()
+#2 /home/abdmalik1207/Documents/Pembelajaran-2/Laravel/Angkatan-Ali/Authentication/vendor/symfony/console/Input/ArgvInput.php(71): Symfony\\Component\\Console\\Input\\ArgvInput->parseToken()
+#3 /home/abdmalik1207/Documents/Pembelajaran-2/Laravel/Angkatan-Ali/Authentication/vendor/symfony/console/Input/Input.php(55): Symfony\\Component\\Console\\Input\\ArgvInput->parse()
+#4 /home/abdmalik1207/Documents/Pembelajaran-2/Laravel/Angkatan-Ali/Authentication/vendor/symfony/console/Command/Command.php(250): Symfony\\Component\\Console\\Input\\Input->bind()
+#5 /home/abdmalik1207/Documents/Pembelajaran-2/Laravel/Angkatan-Ali/Authentication/vendor/laravel/framework/src/Illuminate/Console/Command.php(121): Symfony\\Component\\Console\\Command\\Command->run()
+#6 /home/abdmalik1207/Documents/Pembelajaran-2/Laravel/Angkatan-Ali/Authentication/vendor/symfony/console/Application.php(989): Illuminate\\Console\\Command->run()
+#7 /home/abdmalik1207/Documents/Pembelajaran-2/Laravel/Angkatan-Ali/Authentication/vendor/symfony/console/Application.php(299): Symfony\\Component\\Console\\Application->doRunCommand()
+#8 /home/abdmalik1207/Documents/Pembelajaran-2/Laravel/Angkatan-Ali/Authentication/vendor/symfony/console/Application.php(171): Symfony\\Component\\Console\\Application->doRun()
+#9 /home/abdmalik1207/Documents/Pembelajaran-2/Laravel/Angkatan-Ali/Authentication/vendor/laravel/framework/src/Illuminate/Console/Application.php(102): Symfony\\Component\\Console\\Application->run()
+#10 /home/abdmalik1207/Documents/Pembelajaran-2/Laravel/Angkatan-Ali/Authentication/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(129): Illuminate\\Console\\Application->run()
+#11 /home/abdmalik1207/Documents/Pembelajaran-2/Laravel/Angkatan-Ali/Authentication/artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle()
+#12 {main}
+"} 
+[2022-11-22 06:00:52] local.ERROR: The "--columns" option does not exist. {"exception":"[object] (Symfony\\Component\\Console\\Exception\\RuntimeException(code: 0): The \"--columns\" option does not exist. at /home/abdmalik1207/Documents/Pembelajaran-2/Laravel/Angkatan-Ali/Authentication/vendor/symfony/console/Input/ArgvInput.php:220)
+[stacktrace]
+#0 /home/abdmalik1207/Documents/Pembelajaran-2/Laravel/Angkatan-Ali/Authentication/vendor/symfony/console/Input/ArgvInput.php(147): Symfony\\Component\\Console\\Input\\ArgvInput->addLongOption()
+#1 /home/abdmalik1207/Documents/Pembelajaran-2/Laravel/Angkatan-Ali/Authentication/vendor/symfony/console/Input/ArgvInput.php(82): Symfony\\Component\\Console\\Input\\ArgvInput->parseLongOption()
+#2 /home/abdmalik1207/Documents/Pembelajaran-2/Laravel/Angkatan-Ali/Authentication/vendor/symfony/console/Input/ArgvInput.php(71): Symfony\\Component\\Console\\Input\\ArgvInput->parseToken()
+#3 /home/abdmalik1207/Documents/Pembelajaran-2/Laravel/Angkatan-Ali/Authentication/vendor/symfony/console/Input/Input.php(55): Symfony\\Component\\Console\\Input\\ArgvInput->parse()
+#4 /home/abdmalik1207/Documents/Pembelajaran-2/Laravel/Angkatan-Ali/Authentication/vendor/symfony/console/Command/Command.php(250): Symfony\\Component\\Console\\Input\\Input->bind()
+#5 /home/abdmalik1207/Documents/Pembelajaran-2/Laravel/Angkatan-Ali/Authentication/vendor/laravel/framework/src/Illuminate/Console/Command.php(121): Symfony\\Component\\Console\\Command\\Command->run()
+#6 /home/abdmalik1207/Documents/Pembelajaran-2/Laravel/Angkatan-Ali/Authentication/vendor/symfony/console/Application.php(989): Illuminate\\Console\\Command->run()
+#7 /home/abdmalik1207/Documents/Pembelajaran-2/Laravel/Angkatan-Ali/Authentication/vendor/symfony/console/Application.php(299): Symfony\\Component\\Console\\Application->doRunCommand()
+#8 /home/abdmalik1207/Documents/Pembelajaran-2/Laravel/Angkatan-Ali/Authentication/vendor/symfony/console/Application.php(171): Symfony\\Component\\Console\\Application->doRun()
+#9 /home/abdmalik1207/Documents/Pembelajaran-2/Laravel/Angkatan-Ali/Authentication/vendor/laravel/framework/src/Illuminate/Console/Application.php(102): Symfony\\Component\\Console\\Application->run()
+#10 /home/abdmalik1207/Documents/Pembelajaran-2/Laravel/Angkatan-Ali/Authentication/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(129): Illuminate\\Console\\Application->run()
+#11 /home/abdmalik1207/Documents/Pembelajaran-2/Laravel/Angkatan-Ali/Authentication/artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle()
+#12 {main}
+"} 
+[2022-11-22 06:00:55] local.ERROR: The "--columns" option does not exist. {"exception":"[object] (Symfony\\Component\\Console\\Exception\\RuntimeException(code: 0): The \"--columns\" option does not exist. at /home/abdmalik1207/Documents/Pembelajaran-2/Laravel/Angkatan-Ali/Authentication/vendor/symfony/console/Input/ArgvInput.php:220)
+[stacktrace]
+#0 /home/abdmalik1207/Documents/Pembelajaran-2/Laravel/Angkatan-Ali/Authentication/vendor/symfony/console/Input/ArgvInput.php(147): Symfony\\Component\\Console\\Input\\ArgvInput->addLongOption()
+#1 /home/abdmalik1207/Documents/Pembelajaran-2/Laravel/Angkatan-Ali/Authentication/vendor/symfony/console/Input/ArgvInput.php(82): Symfony\\Component\\Console\\Input\\ArgvInput->parseLongOption()
+#2 /home/abdmalik1207/Documents/Pembelajaran-2/Laravel/Angkatan-Ali/Authentication/vendor/symfony/console/Input/ArgvInput.php(71): Symfony\\Component\\Console\\Input\\ArgvInput->parseToken()
+#3 /home/abdmalik1207/Documents/Pembelajaran-2/Laravel/Angkatan-Ali/Authentication/vendor/symfony/console/Input/Input.php(55): Symfony\\Component\\Console\\Input\\ArgvInput->parse()
+#4 /home/abdmalik1207/Documents/Pembelajaran-2/Laravel/Angkatan-Ali/Authentication/vendor/symfony/console/Command/Command.php(250): Symfony\\Component\\Console\\Input\\Input->bind()
+#5 /home/abdmalik1207/Documents/Pembelajaran-2/Laravel/Angkatan-Ali/Authentication/vendor/laravel/framework/src/Illuminate/Console/Command.php(121): Symfony\\Component\\Console\\Command\\Command->run()
+#6 /home/abdmalik1207/Documents/Pembelajaran-2/Laravel/Angkatan-Ali/Authentication/vendor/symfony/console/Application.php(989): Illuminate\\Console\\Command->run()
+#7 /home/abdmalik1207/Documents/Pembelajaran-2/Laravel/Angkatan-Ali/Authentication/vendor/symfony/console/Application.php(299): Symfony\\Component\\Console\\Application->doRunCommand()
+#8 /home/abdmalik1207/Documents/Pembelajaran-2/Laravel/Angkatan-Ali/Authentication/vendor/symfony/console/Application.php(171): Symfony\\Component\\Console\\Application->doRun()
+#9 /home/abdmalik1207/Documents/Pembelajaran-2/Laravel/Angkatan-Ali/Authentication/vendor/laravel/framework/src/Illuminate/Console/Application.php(102): Symfony\\Component\\Console\\Application->run()
+#10 /home/abdmalik1207/Documents/Pembelajaran-2/Laravel/Angkatan-Ali/Authentication/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(129): Illuminate\\Console\\Application->run()
+#11 /home/abdmalik1207/Documents/Pembelajaran-2/Laravel/Angkatan-Ali/Authentication/artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle()
+#12 {main}
+"} 
+[2022-11-22 06:01:41] local.ERROR: Command "migrate-fresh" is not defined.
+
+Did you mean one of these?
+    migrate:fresh
+    migrate:refresh
+    migrate:reset {"exception":"[object] (Symfony\\Component\\Console\\Exception\\CommandNotFoundException(code: 0): Command \"migrate-fresh\" is not defined.
+
+Did you mean one of these?
+    migrate:fresh
+    migrate:refresh
+    migrate:reset at /home/abdmalik1207/Documents/Pembelajaran-2/Laravel/Angkatan-Ali/Authentication/vendor/symfony/console/Application.php:683)
+[stacktrace]
+#0 /home/abdmalik1207/Documents/Pembelajaran-2/Laravel/Angkatan-Ali/Authentication/vendor/symfony/console/Application.php(259): Symfony\\Component\\Console\\Application->find()
+#1 /home/abdmalik1207/Documents/Pembelajaran-2/Laravel/Angkatan-Ali/Authentication/vendor/symfony/console/Application.php(171): Symfony\\Component\\Console\\Application->doRun()
+#2 /home/abdmalik1207/Documents/Pembelajaran-2/Laravel/Angkatan-Ali/Authentication/vendor/laravel/framework/src/Illuminate/Console/Application.php(102): Symfony\\Component\\Console\\Application->run()
+#3 /home/abdmalik1207/Documents/Pembelajaran-2/Laravel/Angkatan-Ali/Authentication/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(129): Illuminate\\Console\\Application->run()
+#4 /home/abdmalik1207/Documents/Pembelajaran-2/Laravel/Angkatan-Ali/Authentication/artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle()
+#5 {main}
+"} 
+[2022-11-22 07:17:27] local.ERROR: The "--columns" option does not exist. {"exception":"[object] (Symfony\\Component\\Console\\Exception\\RuntimeException(code: 0): The \"--columns\" option does not exist. at /home/abdmalik1207/Documents/Pembelajaran-2/Laravel/Angkatan-Ali/Authentication/vendor/symfony/console/Input/ArgvInput.php:220)
+[stacktrace]
+#0 /home/abdmalik1207/Documents/Pembelajaran-2/Laravel/Angkatan-Ali/Authentication/vendor/symfony/console/Input/ArgvInput.php(147): Symfony\\Component\\Console\\Input\\ArgvInput->addLongOption()
+#1 /home/abdmalik1207/Documents/Pembelajaran-2/Laravel/Angkatan-Ali/Authentication/vendor/symfony/console/Input/ArgvInput.php(82): Symfony\\Component\\Console\\Input\\ArgvInput->parseLongOption()
+#2 /home/abdmalik1207/Documents/Pembelajaran-2/Laravel/Angkatan-Ali/Authentication/vendor/symfony/console/Input/ArgvInput.php(71): Symfony\\Component\\Console\\Input\\ArgvInput->parseToken()
+#3 /home/abdmalik1207/Documents/Pembelajaran-2/Laravel/Angkatan-Ali/Authentication/vendor/symfony/console/Input/Input.php(55): Symfony\\Component\\Console\\Input\\ArgvInput->parse()
+#4 /home/abdmalik1207/Documents/Pembelajaran-2/Laravel/Angkatan-Ali/Authentication/vendor/symfony/console/Command/Command.php(250): Symfony\\Component\\Console\\Input\\Input->bind()
+#5 /home/abdmalik1207/Documents/Pembelajaran-2/Laravel/Angkatan-Ali/Authentication/vendor/laravel/framework/src/Illuminate/Console/Command.php(121): Symfony\\Component\\Console\\Command\\Command->run()
+#6 /home/abdmalik1207/Documents/Pembelajaran-2/Laravel/Angkatan-Ali/Authentication/vendor/symfony/console/Application.php(989): Illuminate\\Console\\Command->run()
+#7 /home/abdmalik1207/Documents/Pembelajaran-2/Laravel/Angkatan-Ali/Authentication/vendor/symfony/console/Application.php(299): Symfony\\Component\\Console\\Application->doRunCommand()
+#8 /home/abdmalik1207/Documents/Pembelajaran-2/Laravel/Angkatan-Ali/Authentication/vendor/symfony/console/Application.php(171): Symfony\\Component\\Console\\Application->doRun()
+#9 /home/abdmalik1207/Documents/Pembelajaran-2/Laravel/Angkatan-Ali/Authentication/vendor/laravel/framework/src/Illuminate/Console/Application.php(102): Symfony\\Component\\Console\\Application->run()
+#10 /home/abdmalik1207/Documents/Pembelajaran-2/Laravel/Angkatan-Ali/Authentication/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(129): Illuminate\\Console\\Application->run()
+#11 /home/abdmalik1207/Documents/Pembelajaran-2/Laravel/Angkatan-Ali/Authentication/artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle()
+#12 {main}
+"} 
+[2022-11-22 07:17:32] local.ERROR: The "--columns" option does not exist. {"exception":"[object] (Symfony\\Component\\Console\\Exception\\RuntimeException(code: 0): The \"--columns\" option does not exist. at /home/abdmalik1207/Documents/Pembelajaran-2/Laravel/Angkatan-Ali/Authentication/vendor/symfony/console/Input/ArgvInput.php:220)
+[stacktrace]
+#0 /home/abdmalik1207/Documents/Pembelajaran-2/Laravel/Angkatan-Ali/Authentication/vendor/symfony/console/Input/ArgvInput.php(147): Symfony\\Component\\Console\\Input\\ArgvInput->addLongOption()
+#1 /home/abdmalik1207/Documents/Pembelajaran-2/Laravel/Angkatan-Ali/Authentication/vendor/symfony/console/Input/ArgvInput.php(82): Symfony\\Component\\Console\\Input\\ArgvInput->parseLongOption()
+#2 /home/abdmalik1207/Documents/Pembelajaran-2/Laravel/Angkatan-Ali/Authentication/vendor/symfony/console/Input/ArgvInput.php(71): Symfony\\Component\\Console\\Input\\ArgvInput->parseToken()
+#3 /home/abdmalik1207/Documents/Pembelajaran-2/Laravel/Angkatan-Ali/Authentication/vendor/symfony/console/Input/Input.php(55): Symfony\\Component\\Console\\Input\\ArgvInput->parse()
+#4 /home/abdmalik1207/Documents/Pembelajaran-2/Laravel/Angkatan-Ali/Authentication/vendor/symfony/console/Command/Command.php(250): Symfony\\Component\\Console\\Input\\Input->bind()
+#5 /home/abdmalik1207/Documents/Pembelajaran-2/Laravel/Angkatan-Ali/Authentication/vendor/laravel/framework/src/Illuminate/Console/Command.php(121): Symfony\\Component\\Console\\Command\\Command->run()
+#6 /home/abdmalik1207/Documents/Pembelajaran-2/Laravel/Angkatan-Ali/Authentication/vendor/symfony/console/Application.php(989): Illuminate\\Console\\Command->run()
+#7 /home/abdmalik1207/Documents/Pembelajaran-2/Laravel/Angkatan-Ali/Authentication/vendor/symfony/console/Application.php(299): Symfony\\Component\\Console\\Application->doRunCommand()
+#8 /home/abdmalik1207/Documents/Pembelajaran-2/Laravel/Angkatan-Ali/Authentication/vendor/symfony/console/Application.php(171): Symfony\\Component\\Console\\Application->doRun()
+#9 /home/abdmalik1207/Documents/Pembelajaran-2/Laravel/Angkatan-Ali/Authentication/vendor/laravel/framework/src/Illuminate/Console/Application.php(102): Symfony\\Component\\Console\\Application->run()
+#10 /home/abdmalik1207/Documents/Pembelajaran-2/Laravel/Angkatan-Ali/Authentication/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(129): Illuminate\\Console\\Application->run()
+#11 /home/abdmalik1207/Documents/Pembelajaran-2/Laravel/Angkatan-Ali/Authentication/artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle()
+#12 {main}
+"} 
+[2022-11-22 07:17:40] local.ERROR: The "--columns" option does not exist. {"exception":"[object] (Symfony\\Component\\Console\\Exception\\RuntimeException(code: 0): The \"--columns\" option does not exist. at /home/abdmalik1207/Documents/Pembelajaran-2/Laravel/Angkatan-Ali/Authentication/vendor/symfony/console/Input/ArgvInput.php:220)
+[stacktrace]
+#0 /home/abdmalik1207/Documents/Pembelajaran-2/Laravel/Angkatan-Ali/Authentication/vendor/symfony/console/Input/ArgvInput.php(147): Symfony\\Component\\Console\\Input\\ArgvInput->addLongOption()
+#1 /home/abdmalik1207/Documents/Pembelajaran-2/Laravel/Angkatan-Ali/Authentication/vendor/symfony/console/Input/ArgvInput.php(82): Symfony\\Component\\Console\\Input\\ArgvInput->parseLongOption()
+#2 /home/abdmalik1207/Documents/Pembelajaran-2/Laravel/Angkatan-Ali/Authentication/vendor/symfony/console/Input/ArgvInput.php(71): Symfony\\Component\\Console\\Input\\ArgvInput->parseToken()
+#3 /home/abdmalik1207/Documents/Pembelajaran-2/Laravel/Angkatan-Ali/Authentication/vendor/symfony/console/Input/Input.php(55): Symfony\\Component\\Console\\Input\\ArgvInput->parse()
+#4 /home/abdmalik1207/Documents/Pembelajaran-2/Laravel/Angkatan-Ali/Authentication/vendor/symfony/console/Command/Command.php(250): Symfony\\Component\\Console\\Input\\Input->bind()
+#5 /home/abdmalik1207/Documents/Pembelajaran-2/Laravel/Angkatan-Ali/Authentication/vendor/laravel/framework/src/Illuminate/Console/Command.php(121): Symfony\\Component\\Console\\Command\\Command->run()
+#6 /home/abdmalik1207/Documents/Pembelajaran-2/Laravel/Angkatan-Ali/Authentication/vendor/symfony/console/Application.php(989): Illuminate\\Console\\Command->run()
+#7 /home/abdmalik1207/Documents/Pembelajaran-2/Laravel/Angkatan-Ali/Authentication/vendor/symfony/console/Application.php(299): Symfony\\Component\\Console\\Application->doRunCommand()
+#8 /home/abdmalik1207/Documents/Pembelajaran-2/Laravel/Angkatan-Ali/Authentication/vendor/symfony/console/Application.php(171): Symfony\\Component\\Console\\Application->doRun()
+#9 /home/abdmalik1207/Documents/Pembelajaran-2/Laravel/Angkatan-Ali/Authentication/vendor/laravel/framework/src/Illuminate/Console/Application.php(102): Symfony\\Component\\Console\\Application->run()
+#10 /home/abdmalik1207/Documents/Pembelajaran-2/Laravel/Angkatan-Ali/Authentication/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(129): Illuminate\\Console\\Application->run()
+#11 /home/abdmalik1207/Documents/Pembelajaran-2/Laravel/Angkatan-Ali/Authentication/artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle()
+#12 {main}
+"} 
+[2022-11-22 07:18:22] local.ERROR: Command "serev" is not defined. {"exception":"[object] (Symfony\\Component\\Console\\Exception\\CommandNotFoundException(code: 0): Command \"serev\" is not defined. at /home/abdmalik1207/Documents/Pembelajaran-2/Laravel/Angkatan-Ali/Authentication/vendor/symfony/console/Application.php:683)
+[stacktrace]
+#0 /home/abdmalik1207/Documents/Pembelajaran-2/Laravel/Angkatan-Ali/Authentication/vendor/symfony/console/Application.php(259): Symfony\\Component\\Console\\Application->find()
+#1 /home/abdmalik1207/Documents/Pembelajaran-2/Laravel/Angkatan-Ali/Authentication/vendor/symfony/console/Application.php(171): Symfony\\Component\\Console\\Application->doRun()
+#2 /home/abdmalik1207/Documents/Pembelajaran-2/Laravel/Angkatan-Ali/Authentication/vendor/laravel/framework/src/Illuminate/Console/Application.php(102): Symfony\\Component\\Console\\Application->run()
+#3 /home/abdmalik1207/Documents/Pembelajaran-2/Laravel/Angkatan-Ali/Authentication/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(129): Illuminate\\Console\\Application->run()
+#4 /home/abdmalik1207/Documents/Pembelajaran-2/Laravel/Angkatan-Ali/Authentication/artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle()
+#5 {main}
+"} 
