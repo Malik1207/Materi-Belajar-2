@@ -1,6 +1,6 @@
 // Libraries
-import React, { Component, createContext, Fragment } from "react";
-import { BrowserRouter as Router, Route, Link, Routes, useParams } from "react-router-dom";
+import React, { Component, Fragment } from "react";
+import { BrowserRouter as Router, Route, Link, Routes } from "react-router-dom";
 
 // Pages
 // import YoutubeComp from "../../component/YoutubeComponent/Component";
@@ -8,18 +8,33 @@ import BlogPost from "../pages/BlogPost/BlogPost";
 import Product from "../pages/Product/Component";
 import LifeCycleComp from "../pages/LifeCycleComp/LifeCycleComp";
 import YoutubeCompPage from "../pages/YoutubeCompPage/YoutubeCompPage";
+import DetailPost from "../pages/BlogPost/DetailPost/DetailPost";
+import GlobalProvider from "../../context/context";
 
 // Style
 import "./Home.css";
-import DetailPost from "../pages/BlogPost/DetailPost/DetailPost";
 
-export const RootContext = createContext();
-const Provider = RootContext.Provider;
+// export const RootContext = createContext();
+// const Provider = RootContext.Provider;
 
 class Home extends Component {
-  state = {
-    totalOrder: 5,
-  };
+  // state = {
+  //   totalOrder: 5,
+  // };
+
+  // dispatch = (action) => {
+  //   if (action.type === "PLUS_ORDER") {
+  //     return this.setState({
+  //       totalOrder: this.state.totalOrder + 1,
+  //     });
+  //   }
+  //   if (action.type === "MINUS_ORDER") {
+  //     return this.setState({
+  //       totalOrder: this.state.totalOrder - 1,
+  //     });
+  //   }
+  // };
+
   // state = {
   //   showComponent: true,
   // };
@@ -35,8 +50,8 @@ class Home extends Component {
   render() {
     return (
       <Router>
-        <Provider value={this.state}>
-          {/* <div>
+        {/* <Provider value={{ state: this.state, dispatch: this.dispatch }}> */}
+        {/* <div>
           <p>Youtube Component</p>
           <hr />
           <YoutubeComp time="7.12" title="Tutorial React JS - Bagian 1" desc="2x ditonton, 2 hari yang lalu" />
@@ -50,25 +65,25 @@ class Home extends Component {
           <hr />
           <BlogPost />
         </div> */}
-          <Fragment>
-            <div className="navigation">
-              <Link to="/">Blog Post</Link>
-              <Link to="/product">Product</Link>
-              <Link to="/lifecycle">LifeCycle</Link>
-              <Link to="/youtube-component">Youtube</Link>
-            </div>
-            <Routes>
-              <Route path="/" exact element={<BlogPost />} />
-              <Route path="/detail-post/:postID" exact element={<DetailPost />} />
-              <Route path="/product" element={<Product />} />
-              <Route path="/lifecycle" element={<LifeCycleComp />} />
-              <Route path="/youtube-component" element={<YoutubeCompPage />} />
-            </Routes>
-          </Fragment>
-        </Provider>
+        <Fragment>
+          <div className="navigation">
+            <Link to="/">Blog Post</Link>
+            <Link to="/product">Product</Link>
+            <Link to="/lifecycle">LifeCycle</Link>
+            <Link to="/youtube-component">Youtube</Link>
+          </div>
+          <Routes>
+            <Route path="/" exact element={<BlogPost />} />
+            <Route path="/detail-post/:postID" exact element={<DetailPost />} />
+            <Route path="/product" element={<Product />} />
+            <Route path="/lifecycle" element={<LifeCycleComp />} />
+            <Route path="/youtube-component" element={<YoutubeCompPage />} />
+          </Routes>
+        </Fragment>
+        {/* </Provider> */}
       </Router>
     );
   }
 }
 
-export default Home;
+export default GlobalProvider(Home);

@@ -1,7 +1,9 @@
 import { Component, Fragment } from "react";
-import { connect, Connect } from "react-redux";
+// import { connect, Connect } from "react-redux";
 import CardProduct from "../../CardProduct/Component";
 import "./Component.css";
+// import { RootContext } from "../../Home/Home";
+import { GlobalConsumer } from "../../../context/context";
 
 class Product extends Component {
   // state = {
@@ -16,6 +18,9 @@ class Product extends Component {
 
   render() {
     return (
+      // <RootContext.Consumer>
+      //   {(value) => {
+      //     return (
       <Fragment>
         <div className="container">
           <p>Product</p>
@@ -26,12 +31,15 @@ class Product extends Component {
             </div>
             <div className="troley">
               <img src="https://icon-library.com/images/basket-icon/basket-icon-14.jpg" alt="" />
-              <div className="count">{/* {this.props.order} */ 0}</div>
+              <div className="count">{/* {this.props.order} */ /*value.state.totalOrder*/ this.props.state.totalOrder}</div>
             </div>
           </div>
           <CardProduct /*onCounterChange={(value) => this.handleCounterChange(value)} */ />
         </div>
       </Fragment>
+      //     );
+      //   }}
+      // </RootContext.Consumer>
     );
   }
 }
@@ -42,4 +50,4 @@ class Product extends Component {
 // };
 
 // export default connect(mapStateToProps)(Product);
-export default Product;
+export default GlobalConsumer(Product);

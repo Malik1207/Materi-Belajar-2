@@ -1,6 +1,8 @@
 import React, { Component } from "react";
-import { connect, Connect } from "react-redux";
+import { GlobalConsumer } from "../../../context/context";
+// import { connect, Connect } from "react-redux";
 import "./LifeCycleComp.css";
+// import { RootContext } from "../../Home/Home";
 
 class LifeCycleComp extends Component {
   constructor(props) {
@@ -57,6 +59,9 @@ class LifeCycleComp extends Component {
 
   render() {
     return (
+      // <RootContext.Consumer>
+      //   {(value) => {
+      //     return (
       <div className="container">
         <p>Life Cycle Component</p>
         <hr style={{ margin: "30px 0px" }} />
@@ -64,8 +69,11 @@ class LifeCycleComp extends Component {
           Component Button {this.state.count}
         </button>
         <hr style={{ margin: "30px 0px" }} />
-        <p>Total Order: {/*this.props.order*/ 0}</p>
+        <p>Total Order: {/*this.props.order*/ /*value.state.totalOrder*/ this.props.state.totalOrder}</p>
       </div>
+      //     );
+      //   }}
+      // </RootContext.Consumer>
     );
   }
 }
@@ -77,4 +85,4 @@ class LifeCycleComp extends Component {
 // };
 
 // export default connect(mapStateToProps)(LifeCycleComp);
-export default LifeCycleComp;
+export default GlobalConsumer(LifeCycleComp);

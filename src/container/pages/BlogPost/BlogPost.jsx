@@ -1,7 +1,8 @@
 import React, { Component, Fragment } from "react";
 import Post from "../../../component/Post/Post";
-import axios from "axios";
+// import axios from "axios";
 import "./BlogPost.css";
+import API from "../../../services";
 
 class BlogPost extends Component {
   state = {
@@ -13,42 +14,81 @@ class BlogPost extends Component {
       userId: 1,
     },
     isUpdate: false,
+    comments: [],
   };
 
   getPostAPI = () => {
-    axios.get("http://localhost:3004/posts?_sort=id&_order=desc").then((result) => {
+    API.getNewsBlog().then((result) => {
       this.setState({
-        post: result.data,
+        post: result,
       });
     });
+    API.getComments().then((result) => {
+      console.log(result);
+      this.setState({
+        comments: result,
+      });
+    });
+    // axios.get("http://localhost:3004/posts?_sort=id&_order=desc").then((result) => {
+    //   this.setState({
+    //     post: result.data,
+    //   });
+    // });
   };
 
   postDataToAPI = () => {
-    axios.post("http://localhost:3004/posts", this.state.formBlogPost).then(
-      (res) => {
-        console.log(res);
-        this.getPostAPI();
-        this.handleFormChangeClear();
-      },
-      (err) => {
-        console.log("error :", err);
-      }
-    );
+    API.postNewsBlog(this.state.formBlogPost).then((res) => {
+      this.getPostAPI();
+      this.setState({
+        formBlogPost: {
+          id: 1,
+          title: "",
+          body: "",
+          userId: 1,
+        },
+      });
+    });
+
+    // axios.post("http://localhost:3004/posts", this.state.formBlogPost).then(
+    //   (res) => {
+    //     console.log(res);
+    //     this.getPostAPI();
+    //     this.handleFormChangeClear();
+    //   },
+    //   (err) => {
+    //     console.log("error :", err);
+    //   }
+    // );
   };
 
   putDataToAPI = () => {
-    axios.put(`http://localhost:3004/posts/${this.state.formBlogPost.id}`, this.state.formBlogPost).then((res) => {
-      console.log(res);
+    API.updateNewsBlog(this.state.formBlogPost, this.state.formBlogPost.id).then((res) => {
       this.getPostAPI();
-      this.handleFormChangeClear();
+      this.setState({
+        formBlogPost: {
+          id: 1,
+          title: "",
+          body: "",
+          userId: 1,
+        },
+      });
     });
+
+    // axios.put(`http://localhost:3004/posts/${this.state.formBlogPost.id}`, this.state.formBlogPost).then((res) => {
+    //   console.log(res);
+    //   this.getPostAPI();
+    //   this.handleFormChangeClear();
+    // });
   };
 
   handleRemove = (data) => {
-    // console.log(data);
-    axios.delete(`http://localhost:3004/posts/${data}`).then((res) => {
+    API.deleteNewsBlog(data).then((res) => {
       this.getPostAPI();
     });
+    // console.log(data);
+    // axios.delete(`http://localhost:3004/posts/${data}`).then((res) => {
+    //   this.getPostAPI();
+    // });
   };
 
   handleUpdate = (data) => {
@@ -148,6 +188,13 @@ class BlogPost extends Component {
               Simpan
             </button>
           </div>
+          {/* {this.state.comments.map((comment) => {
+            return (
+              <p>
+                {comment.name} - {comment.email}
+              </p>
+            );
+          })} */}
           {this.state.post.map((post) => {
             return <Post key={post.id} data={post} remove={this.handleRemove} update={this.handleUpdate} /*goDetail={this.handleDetail}*/ />;
           })}

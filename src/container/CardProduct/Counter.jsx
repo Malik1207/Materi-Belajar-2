@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { GlobalConsumer } from "../../context/context";
 // import { RouteContext } from "react-router/dist/lib/context";
 // import { connect, Connect } from "react-redux";
 // import ActionType from "../../redux/reducer/globalActionType";
@@ -40,22 +41,22 @@ class Counter extends Component {
   render() {
     // console.log(this.props);
     return (
-      <RootContext.Consumer>
-        {(value) => {
-          console.log("value: ", value);
-          return (
-            <div className="counter">
-              <button className="minus" /*onClick={this.props.handleMinus}*/ onClick={() => null}>
-                -
-              </button>
-              <input type="text" /*value={this.props.order}*/ value={value.totalOrder} />
-              <button className="plus" /*onClick={this.props.handlePlus}*/ onClick={() => null}>
-                +
-              </button>
-            </div>
-          );
-        }}
-      </RootContext.Consumer>
+      // <RootContext.Consumer>
+      //   {(value) => {
+      //     console.log("value: ", value);
+      //     return (
+      <div className="counter">
+        <button className="minus" /*onClick={this.props.handleMinus}*/ onClick={() => /*value.dispatch({ type: "MINUS_ORDER" })*/ this.props.dispatch({ type: "MINUS_ORDER" })}>
+          -
+        </button>
+        <input type="text" /*value={this.props.order}*/ value={/*value.state.totalOrder*/ this.props.state.totalOrder} />
+        <button className="plus" /*onClick={this.props.handlePlus}*/ onClick={() => /*value.dispatch({ type: "PLUS_ORDER" })*/ this.props.dispatch({ type: "PLUS_ORDER" })}>
+          +
+        </button>
+      </div>
+      //     );
+      //   }}
+      // </RootContext.Consumer>
     );
   }
 }
@@ -74,4 +75,4 @@ class Counter extends Component {
 // };
 
 // export default connect(mapStateToProps, mapDispatchToProps)(Counter);
-export default Counter;
+export default GlobalConsumer(Counter);
