@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Percabangan</title>
+</head>
+<body>
+    
+    <script>
+        // IF
+        // var totalBelanja = prompt ('Total Belanja', 0);
+
+        // if(totalBelanja > 100000) {
+        //     document.write("<h2>Selamat anda dapat hadiah</h2>");
+        // }
+
+        // document.write("<p>Terima kasih sudah berbelanja di toko kami</p>")
+
+        // IF/ELSE
+        // var password = prompt("Password:");
+
+        // if(password == "kopi"){
+        //     document.write("<h2>Selamat datang bos!</h2>");
+        // } else {
+        //     document.write("<p>Password salah, coba lagi!</p>");
+        // }
+
+        // document.write("<p>Terima kasih sudah menggunakan aplikasi ini!</p>");
+
+        // IF/ELSE IF/ELSE
+        // var nilai = prompt("Inputkan nilai akhir:");
+        // var grade = "";
+
+        // if(nilai >= 90) grade = "A"
+        // else if(nilai >= 80) grade = "B+"
+        // else if(nilai >= 70) grade = "B"
+        // else if(nilai >= 60) grade = "C+"
+        // else if(nilai >= 50) grade = "C"
+        // else if(nilai >= 40) grade = "D"
+        // else if(nilai >= 30) grade = "E"
+        // else grade = "F";
+
+        // document.write(`<p>Grade anda: ${grade}</p>`);
+
+        // var nilai = prompt("Inputkan nilai akhir:");
+        // var grade = "";
+
+        // if (nilai >= 90){
+        //     grade = "A"
+        // } else if(nilai >= 80) {
+        //     grade = "B+"
+        // } else if(nilai >= 70) {
+        //     grade = "B"
+        // } else if(nilai >= 60) {
+        //     grade = "C+"
+        // } else if(nilai >= 50) {
+        //     grade = "C"
+        // } else if(nilai >= 40) {
+        //     grade = "D"
+        // } else if(nilai >= 30) {
+        //     grade = "E"
+        // } else { 
+        //     grade = "F";
+        // }
+        // document.write(`<p>Grade anda: ${grade}</p>`);
+
+        var jawab = prompt("Kamu beruntung! Silahkan pilih hadiahmu dengan memasukan angka 1 sampai 5");
+        var hadiah = "";
+        
+        switch(jawab){
+            case "1":
+                hadiah = "Tisu";
+                break;
+            case "2":
+                hadiah = "1 Kotak Kopi";
+                break;
+            case "3":
+                hadiah = "Sticker";
+                break;
+            case "4":
+                hadiah = "Minyak Goreng";
+                break;
+            case "5":
+                hadiah = "Uang Rp 50.000";
+                break;
+            default:
+                document.write("<p>Opps! anda salah pilih</p>");
+        }
+
+        if(hadiah === ""){
+            document.write("<p>Kamu gagal mendapat hadiah</p>");
+        } else {
+            document.write("<h2>Selamat kamu mendapatkan " + hadiah + "</h2>");
+        }
+
+        var jwb = prompt("Apakah Jakarta ibu kota indonesia?");
+
+        var jawaban = (jwb.toUpperCase() == "IYA") ? "Benar": "Salah";
+
+        document.write(`Jawaban anda: <b>${jawaban}</b>`);
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,90 @@
+{
+    "openapi" : "3.0.0",
+    "info" : {
+        "title": "Api for product",
+        "version": "1.0.0",
+        "description": "Api for product"
+    }, 
+    "servers": [
+        {
+            "url": "hhtp://example.com/api/v1"
+        }
+    ],
+    "externalDocs": {
+        "description": "Find out more about Swagger",
+        "url": "http://swagger.io"
+    },
+    "paths": {
+        "/products": {
+            "get": {
+                "description": "Get all products",
+                "responses":{
+                    "200":{
+                        "description": "Get all products",
+                        "content": {
+                            "application/json":{
+                                "schema":{
+                                    "type": "array",
+                                    "items":{
+                                        "type": "object",
+                                        "properties": {
+                                            "id":{
+                                                "type": "integer"
+                                                "format": "int64"
+                                            },
+                                            "name":{
+                                                "type": "string"
+                                            },
+                                            "price":{
+                                                "type": "number"
+                                                "format": "double"
+                                            },
+                                            "description":{
+                                                "type": "string"
+                                            }
+                                        }
+                                    }
+                                },
+                                "examples": {
+                                    "application/json":{
+                                        "Allproducts"
+                                    },
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "post": {
+                "description": "Create a product",
+                "responses": {
+                    "description": "Create a product",
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "type" "object",
+                                "properties": {
+                                    "name": {
+                                        "type":"number"
+                                        "format":"double"
+                                    },
+                                    
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/products/{id}": {
+            "put":{
+                "description": "Update a product",
+                "responses": {}
+            },
+            "delete":{
+                "description": "Delete a product",
+                "responses": {}
+            }
+        }
+    }
+}

@@ -1,0 +1,1 @@
+<span wire:click='logout' class="dropdown-item">Logout</span>

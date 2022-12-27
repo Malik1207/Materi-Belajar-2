@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Styling</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+</head>
+<body>
+    <form action="">
+        <div class="mt-4">
+            <label for="inputNama">Nama</label>
+            <input type="text" id="inputNama" placeholder="Nama Lengkap" class="form-control form-control w-50">
+        </div>
+        <div class="mt-4">
+            <label for="inputPassword">Password</label>
+            <input type="password" id="inputNama" placeholder="Password" class="form-control w-50">
+        </div>
+        <div class="mt-4">
+            <label for="inputEmail">Email</label>
+            <input type="email" id="inputEmail" placeholder="Email" class="form-control w-50">
+        </div>
+        <div class="mt-4">
+            <label for="inputTahun">Tahun</label>
+            <select id="inputTahun" class="form-control w-50">
+                <option value="">2020</option>
+                <option value="">2021</option>
+                <option value="">2022</option>
+                <option value="">2023</option>
+            </select>
+        </div>
+        <div class="mt-4">
+            <label for="inputKomentar">Komentar</label>
+            <textarea id="inputKomentar" class="form-control w-50"></textarea>
+        </div>
+
+        <div class="mt-4">
+            <label for="Photo">Upload</label>
+            <input type="file" class="form-control w-50" id="Photo">
+        </div>
+
+        <div class="mt-4">
+            <label for="Color">Warna</label>
+            <input type="color" class="form-control form-control-color" id="Color">
+        </div>
+
+        <div class="mt-4">
+            <label for="Jarak">Jarak</label>
+            <input type="range" class="form-range" id="Jarak">
+        </div>
+    </form>
+</body>
+</html>

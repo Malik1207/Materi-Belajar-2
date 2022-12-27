@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <style>
+        .new_color {
+            background-color: var(--bs-indigo);
+        }
+    </style>
+    <title>Flex Wrap</title>
+</head>
+<body>
+    <!-- Flex Wrap -->
+    
+    <div class="container">
+        <div class="p-2 mb-3 bg-dark text-white d-flex flex-row flex-nowrap">
+            <div class="p-3 bg-primary">Box 1</div>
+            <div class="p-3 bg-danger">Box 2</div>
+            <div class="p-3 bg-success">Box 3</div>
+            <div class="p-3 bg-info">Box 4</div>
+            <div class="p-3 bg-warning">Box 5</div>
+            <div class="p-3 bg-secondary">Box 6</div>
+            <div class="p-3 bg-primary">Box 7</div>
+        </div>
+        <div class="p-2 mb-3 bg-dark text-white d-flex flex-row flex-wrap">
+            <div class="p-3 bg-primary">Box 1</div>
+            <div class="p-3 bg-danger">Box 2</div>
+            <div class="p-3 bg-success">Box 3</div>
+            <div class="p-3 bg-info">Box 4</div>
+            <div class="p-3 bg-warning">Box 5</div>
+            <div class="p-3 bg-secondary">Box 6</div>
+            <div class="p-3 bg-primary">Box 7</div>
+        </div>
+        <div class="p-2 mb-3 bg-dark text-white d-flex flex-row flex-wrap-reverse">
+            <div class="p-3 bg-primary">Box 1</div>
+            <div class="p-3 bg-danger">Box 2</div>
+            <div class="p-3 bg-success">Box 3</div>
+            <div class="p-3 bg-info">Box 4</div>
+            <div class="p-3 bg-warning">Box 5</div>
+            <div class="p-3 bg-secondary">Box 6</div>
+            <div class="p-3 bg-primary">Box 7</div>
+        </div>
+    </div>
+    
+</body>
+</html>
