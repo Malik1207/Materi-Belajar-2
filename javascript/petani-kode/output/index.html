@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4 Fungsi output Javascript</title>
+</head>
+<body>
+    
+    <button onclick="alertButton()">Alert</button>
+    
+    <button onclick="writeButton()">Document Write</button>
+
+    <br>
+    <br>
+
+    <input type="text" id="input-text">
+    
+    <button onclick="innerButton()">Inner Html</button>
+
+    <br>
+    
+    <div id="output-inner">
+        <p>
+            Klik tombol Inner!
+        </p>
+    </div>
+    <script>
+        function alertButton() {
+            window.alert('Hello World!')
+        }
+
+        function writeButton () {
+            document.write("<img src='https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/5eeea355389655.59822ff824b72.gif'>")
+        }
+
+        function innerButton () {
+            var input = document.getElementById("input-text").value;
+            
+            var output = document.getElementById('output-inner').innerHTML = input;
+
+            console.log(input);
+
+            alert(input);
+        }
+        
+        console.log("Hello World");
+
+        document.write("<h1>Hello World!</h1>");
+        document.write("<hr>");
+        document.write("<p>Saya sedang belajar Javascript</p>");
+        document.write("di <b>petanikode.com</b>")
+    </script>
+    
+</body>
+</html>

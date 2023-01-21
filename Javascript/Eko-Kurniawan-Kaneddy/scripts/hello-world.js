@@ -1,2 +1,0 @@
-
-document.writeln("Hello World");

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perulangan Javascript</title>
+</head>
+<body>
+    <script>
+
+    // FOR
+    for(let i = 0; i < 10; i++){
+        document.write("<p>Perulangan ke-" + i + "</p>")
+    }
+
+    for(counter = 10; counter > 0; counter--){
+        document.write("<p>Perulangan ke "+counter+"</p>");
+    }
+
+    // WHILE
+    var ulangi = confirm("Apakah anda mau mengulang?");
+    var counter = 0;
+
+    while(ulangi){
+        var jawab = confirm("Apakah anda mau mengulang?")
+        counter++;
+        if(jawab == false){
+            ulangi = false;
+        }
+    }
+
+    document.write("Perulangan sudah dilakukan sebanyak while sebanyak "+ counter +" kali" + "<br>");
+        
+    // DO WHILE
+    var ulangi2 = confirm("Apakah anda mau mengulang?");;
+    var counter2 = 0;
+
+    do {
+        counter2++;
+        ulangi2 = confirm("Apakah anda mau mengulang?");
+    } while(ulangi2)
+
+    document.write("Perulangan sudah dilakukan do while sebanyak "+ counter2 +" kali");
+
+    // FOREACH 
+    var languages = ["Javascript", "HTML", "CSS", "Typescript"];
+
+    for(i in languages){
+        document.write(i+". "+ languages[i] + "<br/>");
+    }
+
+    // kita punya array seperti berikut
+    var days = ["Senin", "Selasa", "Rabu", "Kamis", "Jum'at", "Sabtu", "Minggu"];
+
+    // Kemudian kita tampilkan semua hari
+    // dengan menggunakan method foreach
+    days.forEach(function(day){
+        document.write("<p>" + day + "</p>");
+    });    
+
+    // REPEAT
+    for( let i = 0; i < 100; i++){
+        document.write("Ulangi kalimat ini! ".repeat(100));
+        }
+    </script>
+</body>
+</html>

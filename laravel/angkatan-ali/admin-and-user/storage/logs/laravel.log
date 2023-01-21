@@ -1,0 +1,32 @@
+[2022-11-24 14:12:57] local.ERROR: The "--columns" option does not exist. {"exception":"[object] (Symfony\\Component\\Console\\Exception\\RuntimeException(code: 0): The \"--columns\" option does not exist. at /home/abdmalik1207/Documents/Pembelajaran-2/Laravel/Angkatan-Ali/Admin-And-User/vendor/symfony/console/Input/ArgvInput.php:220)
+[stacktrace]
+#0 /home/abdmalik1207/Documents/Pembelajaran-2/Laravel/Angkatan-Ali/Admin-And-User/vendor/symfony/console/Input/ArgvInput.php(147): Symfony\\Component\\Console\\Input\\ArgvInput->addLongOption()
+#1 /home/abdmalik1207/Documents/Pembelajaran-2/Laravel/Angkatan-Ali/Admin-And-User/vendor/symfony/console/Input/ArgvInput.php(82): Symfony\\Component\\Console\\Input\\ArgvInput->parseLongOption()
+#2 /home/abdmalik1207/Documents/Pembelajaran-2/Laravel/Angkatan-Ali/Admin-And-User/vendor/symfony/console/Input/ArgvInput.php(71): Symfony\\Component\\Console\\Input\\ArgvInput->parseToken()
+#3 /home/abdmalik1207/Documents/Pembelajaran-2/Laravel/Angkatan-Ali/Admin-And-User/vendor/symfony/console/Input/Input.php(55): Symfony\\Component\\Console\\Input\\ArgvInput->parse()
+#4 /home/abdmalik1207/Documents/Pembelajaran-2/Laravel/Angkatan-Ali/Admin-And-User/vendor/symfony/console/Command/Command.php(250): Symfony\\Component\\Console\\Input\\Input->bind()
+#5 /home/abdmalik1207/Documents/Pembelajaran-2/Laravel/Angkatan-Ali/Admin-And-User/vendor/laravel/framework/src/Illuminate/Console/Command.php(121): Symfony\\Component\\Console\\Command\\Command->run()
+#6 /home/abdmalik1207/Documents/Pembelajaran-2/Laravel/Angkatan-Ali/Admin-And-User/vendor/symfony/console/Application.php(989): Illuminate\\Console\\Command->run()
+#7 /home/abdmalik1207/Documents/Pembelajaran-2/Laravel/Angkatan-Ali/Admin-And-User/vendor/symfony/console/Application.php(299): Symfony\\Component\\Console\\Application->doRunCommand()
+#8 /home/abdmalik1207/Documents/Pembelajaran-2/Laravel/Angkatan-Ali/Admin-And-User/vendor/symfony/console/Application.php(171): Symfony\\Component\\Console\\Application->doRun()
+#9 /home/abdmalik1207/Documents/Pembelajaran-2/Laravel/Angkatan-Ali/Admin-And-User/vendor/laravel/framework/src/Illuminate/Console/Application.php(102): Symfony\\Component\\Console\\Application->run()
+#10 /home/abdmalik1207/Documents/Pembelajaran-2/Laravel/Angkatan-Ali/Admin-And-User/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(129): Illuminate\\Console\\Application->run()
+#11 /home/abdmalik1207/Documents/Pembelajaran-2/Laravel/Angkatan-Ali/Admin-And-User/artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle()
+#12 {main}
+"} 
+[2022-11-24 14:13:01] local.ERROR: The "--columns" option does not exist. {"exception":"[object] (Symfony\\Component\\Console\\Exception\\RuntimeException(code: 0): The \"--columns\" option does not exist. at /home/abdmalik1207/Documents/Pembelajaran-2/Laravel/Angkatan-Ali/Admin-And-User/vendor/symfony/console/Input/ArgvInput.php:220)
+[stacktrace]
+#0 /home/abdmalik1207/Documents/Pembelajaran-2/Laravel/Angkatan-Ali/Admin-And-User/vendor/symfony/console/Input/ArgvInput.php(147): Symfony\\Component\\Console\\Input\\ArgvInput->addLongOption()
+#1 /home/abdmalik1207/Documents/Pembelajaran-2/Laravel/Angkatan-Ali/Admin-And-User/vendor/symfony/console/Input/ArgvInput.php(82): Symfony\\Component\\Console\\Input\\ArgvInput->parseLongOption()
+#2 /home/abdmalik1207/Documents/Pembelajaran-2/Laravel/Angkatan-Ali/Admin-And-User/vendor/symfony/console/Input/ArgvInput.php(71): Symfony\\Component\\Console\\Input\\ArgvInput->parseToken()
+#3 /home/abdmalik1207/Documents/Pembelajaran-2/Laravel/Angkatan-Ali/Admin-And-User/vendor/symfony/console/Input/Input.php(55): Symfony\\Component\\Console\\Input\\ArgvInput->parse()
+#4 /home/abdmalik1207/Documents/Pembelajaran-2/Laravel/Angkatan-Ali/Admin-And-User/vendor/symfony/console/Command/Command.php(250): Symfony\\Component\\Console\\Input\\Input->bind()
+#5 /home/abdmalik1207/Documents/Pembelajaran-2/Laravel/Angkatan-Ali/Admin-And-User/vendor/laravel/framework/src/Illuminate/Console/Command.php(121): Symfony\\Component\\Console\\Command\\Command->run()
+#6 /home/abdmalik1207/Documents/Pembelajaran-2/Laravel/Angkatan-Ali/Admin-And-User/vendor/symfony/console/Application.php(989): Illuminate\\Console\\Command->run()
+#7 /home/abdmalik1207/Documents/Pembelajaran-2/Laravel/Angkatan-Ali/Admin-And-User/vendor/symfony/console/Application.php(299): Symfony\\Component\\Console\\Application->doRunCommand()
+#8 /home/abdmalik1207/Documents/Pembelajaran-2/Laravel/Angkatan-Ali/Admin-And-User/vendor/symfony/console/Application.php(171): Symfony\\Component\\Console\\Application->doRun()
+#9 /home/abdmalik1207/Documents/Pembelajaran-2/Laravel/Angkatan-Ali/Admin-And-User/vendor/laravel/framework/src/Illuminate/Console/Application.php(102): Symfony\\Component\\Console\\Application->run()
+#10 /home/abdmalik1207/Documents/Pembelajaran-2/Laravel/Angkatan-Ali/Admin-And-User/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(129): Illuminate\\Console\\Application->run()
+#11 /home/abdmalik1207/Documents/Pembelajaran-2/Laravel/Angkatan-Ali/Admin-And-User/artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle()
+#12 {main}
+"} 

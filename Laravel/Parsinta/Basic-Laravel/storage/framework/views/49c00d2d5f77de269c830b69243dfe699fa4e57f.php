@@ -1,1 +1,0 @@
-components.layouts.app<?php /**PATH /home/abdmalik/laravel-parsinta/storage/framework/views/c17ec6def4c2780360340ff5dfcb793cc5c14df2.blade.php ENDPATH**/ ?>

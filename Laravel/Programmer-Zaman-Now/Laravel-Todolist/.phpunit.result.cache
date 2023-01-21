@@ -1,1 +1,0 @@
-{"version":1,"defects":{"Tests\\Feature\\UserServiceTest::testLoginWrongPassword":4,"Tests\\Feature\\UserControllerTest::testLoginValidationError":3},"times":{"Tests\\Feature\\UserServiceTest::testLoginWrongPassword":0.119,"Tests\\Feature\\UserControllerTest::testLoginValidationError":0.15}}
