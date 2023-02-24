@@ -1,0 +1,2 @@
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+<link href="<?php echo e(url('/style/main.css')); ?>" rel="stylesheet" /><?php /**PATH /home/abdmalik1207/Documents/materi-belajar-2/laravel/build-with-angga/bwastore-laravel/resources/views/includes/style.blade.php ENDPATH**/ ?>
