@@ -1,7 +1,9 @@
-void main() {
-   bool finish = false;
-   print (finish);
+void main(){
 
-   finish = true;
-   print (finish);
+  bool finish = false;
+  print(finish);
+
+  finish = true;
+  print(finish);
+
 }

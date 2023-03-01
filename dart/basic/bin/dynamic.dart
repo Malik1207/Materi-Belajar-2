@@ -1,10 +1,12 @@
-void main() {
-   dynamic variable = 100;
-   print(variable);
+void main(){
 
-   variable = true;
-   print(variable);
+  dynamic variable = 100;
+  print(variable);
 
-   variable = 'Abdul Malik';
-   print(variable);
+  variable = true;
+  print(variable);
+
+  variable = 'Eko';
+  print(variable);
+
 }

@@ -1,24 +1,19 @@
 void main(){
-   // var a = 10;
-   // a = a + 20;
-   // a += 20;
-   // a -= 5;
-   // a *= 2;
-   // a /= 2;
-   // a ~/= 2;
-   // a %= 3;
 
-   // print(a);
+  var a = 10;
 
-   // Increment & Decrement
-   var i = 0;
-   // i++; // i = i + 1;
+  // a = a + 10;
+  a += 10;
 
-   // var u = i++; // a = i, i++;
-   var e = ++i; // e = (++1);
+  print(a);
 
-   // print(i);
-   // print(u);
-   print(e);
-   
+  var i = 0;
+  // i++; // i = i + 1;
+
+  var j = i++; // j = i, i++
+  var k = ++i; // k = (++i)
+
+  print(i);
+  print(j);
+
 }
