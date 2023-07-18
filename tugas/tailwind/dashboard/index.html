@@ -1,0 +1,345 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc" crossorigin="anonymous"></script>
+  <script>
+   tailwind.config = {
+     theme: {
+       extend: {
+         colors: {
+           clifford: '#da373d',
+         }
+       }
+     }
+   }
+  </script>
+</head>
+<body class="bg-[#F8F9FE]">
+  
+  <main class="flex flex-row ">
+    <div class="hidden bg-white lg:w-72 lg:flex lg:flex-col lg:p-8">
+      <img src="/img/Logo.svg" alt="" width="100px" class="mb-12">
+      <a href="" class="flex items-center mb-8">
+        <img src="/img/Grid.svg" alt="">
+        <p class="px-4 font-semibold text-[16px] text-[#3B3DCC]">Dashboard</p>
+      </a>
+      <a href="" class="flex items-center mb-8">
+        <img src="/img/Compass Northwest.svg" alt="">
+        <p class="px-4 text-[16px] text-slate-600">Explore Assets</p>
+      </a>
+      <a href="" class="flex items-center mb-8">
+        <img src="/img/Contact Card.svg" alt="">
+        <p class="px-4 text-[16px] text-slate-600">KYC Details</p>
+      </a>
+      <a href="" class="flex items-center mb-8">
+        <img src="/img/Learning App.svg" alt="">
+        <p class="px-4 text-[16px] text-slate-600">Learning Center</p>
+      </a>
+      <a href="" class="flex items-center mb-8">
+        <img src="/img/Chat.svg" alt="">
+        <p class="px-4 text-[16px] text-slate-600">FAQs</p>
+      </a>
+      <a href="" class="flex items-center mb-8">
+        <img src="/img/Settings.svg" alt="">
+        <p class="px-4 text-[16px] text-slate-600">Settings</p>
+      </a>
+      <div class="container mt-28">
+        <div class="flex flex-col items-center justify-around w-full h-[420px]">
+          <img src="/img/Phone.svg" alt="" width="200px">
+          <span class="w-full text-center">
+            <p class="font-[14px] text-slate-500">Download our Mobile App and be updated</p>
+          </span>
+          <button class="rounded-lg bg-[#3B3DCC] w-full py-4 text-white font-semibold text-[14px]">Download App</button>
+        </div>
+      </div>
+    </div>
+    <div class="flex flex-col w-full p-4">
+      <!-- Header Start -->
+      <header class="flex items-center">
+        <div class="flex justify-between w-full lg:justify-end ">
+          <span  class="flex items-center justify-between w-36 lg:hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 pt-2 h-9">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+            </svg>            
+            <img src="/img/Logo.svg" alt="">
+          </span>
+          <div class="flex items-center">
+            <nav id="nav-menu" class="flex w-full max-w-full">
+              <ul class="flex items-center">
+                <li class="group">
+                  <a href="#beranda" class="hidden py-2 text-base lg:items-center lg:flex text-dark">
+                    <img src="/img/Chat Bubbles Question.svg" width="24px" class="mx-3">
+                    <h1 class="text-slate-600 text-[16px] mx-3">Need Help?</h1>
+                  </a>
+                </li>
+                <li class="group">
+                  <a href="#about" class="flex items-center py-2 text-base text-dark">
+                    <img src="/img/Alert.svg" width="24px" class="mx-3"> 
+                  </a>
+                </li>
+                <li class="group">
+                  <a href="#about" class="hidden py-2 text-base lg:flex lg:items-center text-dark">
+                    <img src="/img/Ellipse 1.svg" width="32px" class="mx-3">
+                    <h1 class="text-slate-600 text-[16px] mx-3">Gautham Reddy?</h1>
+                  </a>
+                </li>
+                <li class="group">
+                  <a href="#about" class="items-center hidden py-2 text-base lg:flex text-dark">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#8b8f8c" class="w-6 h-5 mx-3">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                    </svg>          
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </header>
+      <!-- Header End -->
+      
+      <div class="grid grid-cols-1 gap-6 mt-10 lg:grid-cols-3">
+        <a href="#" class="w-full p-4 transition-shadow bg-white rounded-lg shadow-sm hover:shadow-lg">
+          <div class="flex flex-col items-center">
+            <div class="flex flex-col w-full border-b-2 border-slate-300">
+              <span class="text-[16px] text-gray-400">Current Portfolio Value</span>
+              <div class="flex items-center py-2">
+                <p class="text-[32px] font-semibold">₹ 31,627.80</p>
+                <span class="text-[#53BB53]">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-10 h-6">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M12 19.5v-15m0 0l-6.75 6.75M12 4.5l6.75 6.75" />
+                </svg>
+                </span>            
+              </div>
+            </div>
+            <div class="flex w-full">
+              <div class="flex flex-col w-1/2 pt-4">
+              <span class="text-[12px] text-gray-400">Total Money Invested</span>
+              <div class="flex items-center py-2">
+                <p class="text-[20px] font-semibold">₹ 31,477.50</p>         
+              </div>
+              </div>
+              <div class="flex flex-col w-1/2 pt-4">
+              <span class="text-[12px] text-gray-400">Repayment Done</span>
+              <div class="flex items-center py-2">
+                <p class="text-[20px] font-semibold">₹ 0</p>         
+              </div>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a href="#" class="w-full p-4 transition-shadow bg-white rounded-lg shadow-sm hover:shadow-lg">
+          <h1 class="text-[16px] text-gray-400">Growth</h1>
+          <div class="flex justify-between w-full py-2">
+            <div class="flex flex-col justify-between w-full h-[140px]">
+            <div class="flex items-center">
+              <p class="text-[32px] font-semibold">₹ 150.30</p>
+              <span class="text-[#53BB53]">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-10 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 19.5v-15m0 0l-6.75 6.75M12 4.5l6.75 6.75" />
+              </svg>
+              </span>            
+            </div>
+            <div class="flex items-center">
+              <img src="/img/Growfix-1.svg" alt="">
+              <p class="text-[14px] text-slate-500 px-4">GrowFix Gold</p>
+            </div>
+            <div class="flex items-center">
+              <img src="/img/Growfix-2.svg" alt="">
+              <p class="text-[14px] text-slate-500 px-4">GrowFix Wheels</p>
+            </div>
+          </div>
+          <div class="relative flex w-full">
+            <img src="/img/Circular.svg" alt="Malix" class="max-w-full mx-auto">
+            <span class="absolute flex items-center -translate-x-1/2 top-14 left-1/2">
+              <p>+0.47%</p>
+              <span class="text-[#53BB53]">
+                <svg xmlns="http://www.w3/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="h-5 w-7">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M12 19.5v-15m0 0l-6.75 6.75M12 4.5l6.75 6.75" />
+                </svg>
+              </span>          
+            </span>
+          </div>
+          </div>
+        </a>
+        <a href="#" class="w-full p-4 transition-shadow bg-white rounded-lg shadow-sm hover:shadow-lg">
+          <h1 class="text-[16px] text-gray-500">Resources</h1>
+          <div class="flex justify-between w-full py-4">
+            <div class="flex flex-col justify-between w-full">
+              <div class="flex items-center justify-between max-w-full pb-4 mb-4 border-b-2">
+                <span class="flex items-center">
+                  <img src="/img/Calendar Clock.svg" alt="">                           
+                  <p class="text-[14px] text-slate-500 mx-3">Get Fund Report</p>
+                </span>
+                <span class="text-slate-400">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                  </svg>                
+                </span>                        
+              </div>
+              <div class="flex items-center justify-between max-w-full pb-4 mb-4 border-b-2">
+                <span class="flex items-center">
+                  <img src="/img/Calendar Clock.svg" alt="">                           
+                  <p class="text-[14px] text-slate-500 mx-3">Get Fund Report</p>
+                </span>
+                <span class="text-slate-400">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                  </svg>                
+                </span>                        
+              </div>
+              <div class="flex items-center justify-between max-w-full pb-4 mb-4">
+                <span class="flex items-center">
+                  <img src="/img/Calendar Clock.svg" alt="">                           
+                  <p class="text-[14px] text-slate-500 mx-3">Get Fund Report</p>
+                </span>
+                <span class="text-slate-400">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                  </svg>                
+                </span>                        
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div id="about" class="">
+        <div class="container">
+          <div class="flex flex-wrap">
+            <div class="w-full px-4 mb-10">
+              <h3 class="w-full my-8 text-[20px]">Investments</h3>
+              <div class="flex justify-around lg:w-1/4 text-[16px]">
+                <span class="flex flex-col items-center text-[#3B3DCC]">
+                  <a href="#" class="font-semibold">Active (2)</a>
+                  <i class="fas fa-circle text-[10px]"></i>
+                </span>
+                <a href="#" class="text-slate-500">Inactive (3)</a>
+              </div>
+            </div>
+          </div>
+          <div class="grid grid-cols-1 gap-6 lg:grid-cols-2">
+            <a href="#" class="w-full transition-shadow bg-white rounded-lg shadow-sm hover:shadow-lg">
+              <div class="flex flex-col items-center p-4">
+                <div class="flex items-center justify-around w-full text-[#3B3DCC]">
+                  <img src="/img/Growfix-1.svg" alt="" class="w-[36px]">
+                  <h1 class="font-bold  text-[20px]">GrowFix Gold Dec 30</h1>
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-5">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                  </svg>
+                </div>            
+                <div class="flex w-full border-b-2 border-slate-300">
+                <div class="flex flex-col w-1/2 pt-4">
+                  <span class="text-[12px] text-gray-400">Current Portfolio Value</span>
+                  <div class="flex items-center py-2">
+                    <p class="text-[18px] font-semibold">₹ 15,627.80</p>
+                    <span class="text-[#53BB53]">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-10 h-6">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M12 19.5v-15m0 0l-6.75 6.75M12 4.5l6.75 6.75" />
+                    </svg>
+                    </span>            
+                  </div>
+                </div>
+                <div class="flex flex-col w-1/2 pt-4">
+                  <span class="text-[12px] text-gray-400">Growth</span>
+                  <div class="flex items-center py-2">
+                    <p class="text-[18px] font-semibold">₹ 100.30</p>
+                    <span class="text-[#53BB53]">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-10 h-6">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M12 19.5v-15m0 0l-6.75 6.75M12 4.5l6.75 6.75" />
+                    </svg>
+                    </span>            
+                  </div>
+                </div>
+                </div>
+                <div class="flex w-full">
+                <div class="flex flex-col w-1/2 pt-4">
+                  <span class="text-[12px] text-gray-400">Investment</span>
+                  <div class="flex items-center py-2">
+                  <p class="text-[20px] font-semibold">₹ 15,527.50</p>         
+                  </div>
+                </div>
+                <div class="flex flex-col w-1/2 pt-4">
+                  <span class="text-[12px] text-gray-400">Pre TAX Return</span>
+                  <div class="flex items-center py-2">
+                  <p class="text-[20px] font-semibold">11%</p>         
+                  </div>
+                </div>
+                </div>
+              </div>
+              <div class="w-full pt-10">
+                <img src="/img/Line Cart.svg" alt="" width="100%">
+              </div>
+            </a>
+            <a href="#" class="w-full transition-shadow bg-white rounded-lg shadow-sm hover:shadow-lg">
+              <div class="flex flex-col items-center p-4">
+                <div class="flex items-center justify-around w-full text-[#3B3DCC]">
+                  <img src="/img/Growfix-2.svg" alt="" class="w-[36px]">
+                  <h1 class="font-bold  text-[20px]">GrowFix Wheels</h1>
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-5">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                  </svg>
+                </div>            
+                <div class="flex w-full border-b-2 border-slate-300">
+                <div class="flex flex-col w-1/2 pt-4">
+                  <span class="text-[12px] text-gray-400">Current Portfolio Value</span>
+                  <div class="flex items-center py-2">
+                    <p class="text-[18px] font-semibold">₹ 16,000</p>
+                    <span class="text-[#53BB53]">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-10 h-6">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M12 19.5v-15m0 0l-6.75 6.75M12 4.5l6.75 6.75" />
+                    </svg>
+                    </span>            
+                  </div>
+                </div>
+                <div class="flex flex-col w-1/2 pt-4">
+                  <span class="text-[12px] text-gray-400">Growth</span>
+                  <div class="flex items-center py-2">
+                    <p class="text-[18px] font-semibold">₹ 50</p>
+                    <span class="text-[#53BB53]">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-10 h-6">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M12 19.5v-15m0 0l-6.75 6.75M12 4.5l6.75 6.75" />
+                    </svg>
+                    </span>            
+                  </div>
+                </div>
+                </div>
+                <div class="flex w-full">
+                <div class="flex flex-col w-1/2 pt-4">
+                  <span class="text-[12px] text-gray-400">Investment</span>
+                  <div class="flex items-center py-2">
+                  <p class="text-[20px] font-semibold">₹ 15,950</p>         
+                  </div>
+                </div>
+                <div class="flex flex-col w-1/2 pt-4">
+                  <span class="text-[12px] text-gray-400">Pre TAX Return</span>
+                  <div class="flex items-center py-2">
+                  <p class="text-[20px] font-semibold">11%</p>         
+                  </div>
+                </div>
+                </div>
+              </div>
+              <div class="w-full pt-10">
+                <img src="/img/Line Cart.svg" alt="" width="100%">
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div id="" class="lg:hidden">
+        <div class="container py-14">
+          <div class="flex flex-col items-center justify-between w-full h-[420px]">
+            <img src="/img/Phone.svg" alt="" width="200px">
+            <span class="w-1/3 text-center">
+              <p class="font-[14px] text-slate-500">Download our Mobile App and be updated</p>
+            </span>
+            <button class="rounded-lg bg-[#3B3DCC] w-1/2 py-4 text-white font-semibold text-[14px]">Download App</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>  
+  
+</body>
+</html>

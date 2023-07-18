@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Landing Page</title>
+ <link rel="stylesheet" href="/dist/output.css">
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+ <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc" crossorigin="anonymous"></script>
+</head>
+<body>
+ 
+<!-- Header Start -->
+<header class="absolute top-0 left-0 z-10 flex items-center w-full bg-transparent">
+  <div class="container">
+    <div class="relative flex items-center justify-between">
+      <div class="px-0">
+        <a href="#home" class="font-lora text-[32px] text-[#A55C30] block py-6"><span class="font-bold">Lux</span>Chaffeur</a>
+      </div>
+      <div class="flex items-center px-4">
+        <button id="hamburger" name="hamburger" type="button" class="absolute block right-4 lg:hidden">
+          <span class="transition duration-300 ease-in-out origin-top-left hamburger-line"></span>
+          <span class="transition duration-300 ease-in-out hamburger-line"></span>
+          <span class="transition duration-300 ease-in-out origin-bottom-left hamburger-line"></span>
+        </button> 
+        <nav 
+          id="nav-menu"
+          class="hidden absolute bg-black opacity-[95%] shadow-lg w-[243px] lg:w-full h-screen lg:h-[12px] -right-10 top-full lg:block lg:static lg:bg-transparent lg:shadow-none lg:rounded-none"
+        >
+          <ul class="block mb-2 lg:flex lg:items-center">
+            <li class="group hover:bg-[#C7763E] lg:hover:bg-transparent py-3 lg:py-0">
+              <a href="#home" class="flex mx-8 text-base font-semibold text-white lg:text-cream">Home</a>
+            </li>
+            <li class="group hover:bg-[#C7763E] lg:hover:bg-transparent py-3 lg:py-0">
+              <a href="#about" class="flex mx-8 text-base text-white lg:text-dark">About</a>
+            </li>
+            <li class="group hover:bg-[#C7763E] lg:hover:bg-transparent py-3 lg:py-0">
+              <a href="#services" class="flex mx-8 text-base text-white lg:text-dark">Services</a>
+            </li>
+            <li class="group hover:bg-[#C7763E] lg:hover:bg-transparent py-3 lg:py-0">
+              <a href="#fleet" class="flex mx-8 text-base text-white lg:text-dark">Fleet</a>
+            </li>
+            <li class="group hover:bg-[#C7763E] lg:hover:bg-transparent py-3 lg:py-0">
+              <a href="#contact" class="flex mx-8 text-base text-white lg:text-dark">Contact us</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </div>
+</header>
+<!-- Header End -->
+
+ <!-- Hero Section Start -->
+ <section id="home" class="pt-36">
+  <div class="ml-10">
+    <div class="flex flex-wrap justify-between lg:flex-nowrap">
+     <div class="pl-0">
+      <h3 class="text-[32px] lg:text-[56px] font-semibold font-lora border-l-8 border-cream px-5">Premium <br>and Luxurious<br>Chauffeur<br>Services</h3>
+     </div>
+     <div class="w-[832px] h-screen" style="background-image: url('./dist/img/car.png'); background-repeat: no-repeat;">
+      <span class="absolute hidden lg:block -right-0 top-28 -z-10">
+        <img width="668" src="./dist/img/vector.png" alt="">
+      </span>
+     </div>
+    </div>
+  </div>
+ </section>
+ <!-- Hero Section End -->
+
+ <!-- About Section Start -->
+ <section id="about" class="">
+  <div class="container">
+    <div class="flex flex-wrap justify-center lg:justify-between">
+      <div class="lg:w-1/2">
+        <img src="dist/img/about.png" alt="">
+      </div>
+      <div class="lg:w-1/2">
+        <div class="text-[32px] lg:text-[56px] flex justify-center lg:justify-start mt-10">
+          <h1 class="font-lora font-semibold text-[#A55C30]">About</h1>
+        </div>
+        <div class="lg:w-[481px] text-[14px]">
+          <p class="mt-[24px] text-center lg:text-start">We are known for luxurious and 
+            premium chaffeur services worldwide. We are simply the best you can find.</p>
+          <p class="mt-[24px] text-center lg:text-start">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Interdum parturient laoreet nibh vitae in duis eu vel. Sagittis eget volutpat ac quisque tristique scelerisque proin. Vel nec ac ultrices mi viverra viverra. Mi, arcu sem nec risus cursus ipsum leo. Eget erat tincidunt risus gravida quis massa. Mauris, sed eu ut tellus sed sed morbi.</p>
+          <p class="mt-[24px] text-center lg:text-start">Rhoncus ultricies vel enim montes, molestie sagittis dis. Cras lorem enim elementum vel massa. Massa natoque ac libero adipiscing facilisis vel iaculis. Sed nunc consectetur leo, in sollicitudin. Proin et aenean vitae in nunc pellentesque tristique.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+ </section>
+ <!-- About Section End -->
+
+ <!-- Services Section Start -->
+ <section id="services" class="mt-20 bg-center bg-cover lg:bg-contain" style="background-image: url('dist/img/car.png'); background-repeat: no-repeat;">
+  <div class="bg-black opacity-[91%]">
+    <div class="px-4">
+      <div class="max-w-xl mx-auto text-center">
+        <h3 class="flex justify-center items-center  font-bold font-lora text-[#A55C30] text-[32px] lg:text-[56px] py-10">Services</h3>
+      </div>
+    </div>
+    <div class="container flex flex-wrap justify-between">
+      <div class="px-4 lg:w-1/4">
+        <div class="mb-10">
+          <div class="flex justify-center">
+            <img src="dist/img/Group-1.svg" class="w-[57px] lg:w-[104px]" alt="">
+          </div>
+          <p class="text-white text-center lg:text-start font-bold text-[16px] mt-6">Lorem ipsum dolor sit amet</p>
+          <p class="text-white text-center lg:text-start text-[14px] mt-6"> consectetur adipiscing elit. Interdum parturient laoreet nibh vitae in duis eu vel. Sagittis eget volutpat ac quisque </p> 
+          <p class="text-white text-center lg:text-start text-[14px] mt-6">scelerisque proin. Vel nec ac ultrices mi viverra viverra. Mi, arcu sem nec risus cursus ipsum leo. Eget erat tincidunt ri</p>
+        </div>
+      </div>
+      <div class="px-4 lg:w-1/4">
+        <div class="mb-10">
+          <div class="flex justify-center">
+            <img src="dist/img/Group-2.svg" class="w-[57px] lg:w-[104px]" alt="">
+          </div>
+          <p class="text-white text-center lg:text-start font-bold text-[16px] mt-6">Lorem ipsum dolor sit amet</p>
+          <p class="text-white text-center lg:text-start text-[14px] mt-6"> consectetur adipiscing elit. Interdum parturient laoreet nibh vitae in duis eu vel. Sagittis eget volutpat ac quisque </p> 
+          <p class="text-white text-center lg:text-start text-[14px] mt-6">scelerisque proin. Vel nec ac ultrices mi viverra viverra. Mi, arcu sem nec risus cursus ipsum leo. Eget erat tincidunt ri</p>
+        </div>
+      </div>
+      <div class="px-4 lg:w-1/4">
+        <div class="mb-10">
+          <div class="flex justify-center">
+            <img src="dist/img/Group-3.svg" class="w-[57px] lg:w-[104px]" alt="">
+          </div>
+          <p class="text-white text-center lg:text-start font-bold text-[16px] mt-6">Lorem ipsum dolor sit amet</p>
+          <p class="text-white text-center lg:text-start text-[14px] mt-6"> consectetur adipiscing elit. Interdum parturient laoreet nibh vitae in duis eu vel. Sagittis eget volutpat ac quisque </p> 
+          <p class="text-white text-center lg:text-start text-[14px] mt-6">scelerisque proin. Vel nec ac ultrices mi viverra viverra. Mi, arcu sem nec risus cursus ipsum leo. Eget erat tincidunt ri</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Services Section End -->
+
+<!-- Fleet Section Start -->
+<section id="fleet" class="py-28 bg-slate-100">
+  <div class="container">
+    <div class="w-full px-4">
+      <div class="max-w-xl py-10 mx-auto text-center lg:mb-16">
+        <h1 class="font-lora font-semibold text-[32px] lg:text-[56px] text-[#A55C30]">Fleet</h1>
+      </div>
+    </div>
+    <div class="flex flex-wrap">
+      <div class="w-full px-4 py-4 lg:w-1/2 xl:w-1/3">
+        <div class="overflow-hidden bg-white shadow-lg rounded-xl">
+          <img src="dist/img/car-1.png" alt="Mechanical Keyboard" class="pt-10 mx-auto">
+          <div class="px-6 pt-8">
+            <h3>
+              <a href="#" class="block text-xl font-semibold text-center truncate text-[24px] text-[#A55C30]">FIRST CLASS</a>
+            </h3>
+            <p class="mb-6 text-base font-normal text-center text-[12px]">Mercedes maybach s600</p>
+            <p class="mb-6 text-base font-light text-start text-[12px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ut eu tellus cursus faucibus duis hendrerit volutpat neque. Eget integer a amet iaculis. Nullam elit a </p>
+          </div>
+          <div class="flex justify-between px-6 py-4">
+            <div class="flex">
+              <img src="dist/img/User.svg" alt="User" width="24px">
+              <p class="px-3 text-[14px]">4&nbsp;Seats</p>
+            </div>
+            <div class="flex">
+              <img src="dist/img/Bag.svg" alt="Tas" width="24px">
+              <p class="px-3 text-[14px]">2&nbsp;Lugge</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="w-full px-4 py-4 lg:w-1/2 xl:w-1/3">
+        <div class="overflow-hidden bg-white shadow-lg rounded-xl">
+          <img src="dist/img/car-2.png" alt="Mechanical Keyboard" class="pt-10 mx-auto">
+          <div class="px-6 pt-8">
+            <h3>
+              <a href="#" class="block text-xl font-semibold text-center truncate text-[24px] text-[#A55C30]">BUSINESS CLASS</a>
+            </h3>
+            <p class="mb-6 text-base font-normal text-center text-[12px]">Mercedes G - wagon</p>
+            <p class="mb-6 text-base font-light text-start text-[12px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ut eu tellus cursus faucibus duis hendrerit volutpat neque. Eget integer a amet iaculis. Nullam elit a </p>
+          </div>
+          <div class="flex justify-between px-6 py-4">
+            <div class="flex">
+              <img src="dist/img/User.svg" alt="User" width="24px">
+              <p class="px-3 text-[14px]">4&nbsp;Seats</p>
+            </div>
+            <div class="flex">
+              <img src="dist/img/Bag.svg" alt="Tas" width="24px">
+              <p class="px-3 text-[14px]">2&nbsp;Lugge</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="w-full px-4 py-4 lg:w-1/2 xl:w-1/3">
+        <div class="overflow-hidden bg-white shadow-lg rounded-xl">
+          <img src="dist/img/car-1.png" alt="Mechanical Keyboard" class="pt-10 mx-auto">
+          <div class="px-6 pt-8">
+            <h3>
+              <a href="#" class="block text-xl font-semibold text-center truncate text-[24px] text-[#A55C30]">SUV</a>
+            </h3>
+            <p class="mb-6 text-base font-normal text-center text-[12px]">Mercedes M class</p>
+            <p class="mb-6 text-base font-light text-start text-[12px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ut eu tellus cursus faucibus duis hendrerit volutpat neque. Eget integer a amet iaculis. Nullam elit a </p>
+          </div>
+          <div class="flex justify-between px-6 py-4">
+            <div class="flex">
+              <img src="dist/img/User.svg" alt="User" width="24px">
+              <p class="px-3 text-[14px]">4&nbsp;Seats</p>
+            </div>
+            <div class="flex">
+              <img src="dist/img/Bag.svg" alt="Tas" width="24px">
+              <p class="px-3 text-[14px]">2&nbsp;Lugge</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Fleet Section End -->
+
+<section id="" class="bg-black opacity-[96%]">
+  <div class="container">
+    <div class="flex flex-wrap">
+      <div class="w-full px-4 py-10 lg:w-1/2 xl:w-1/3">
+        <h1 class="text-center text-white text-[42px] lg:text-[72px] font-semibold">70</h1>
+        <h1 class="text-center text-white text-[16px] lg:text-[24px] font-light">VECHILES</h1>
+      </div>
+      <div class="w-full px-4 py-10 lg:w-1/2 xl:w-1/3">
+        <h1 class="text-center text-white text-[42px] lg:text-[72px] font-semibold">576</h1>
+        <h1 class="text-center text-white text-[16px] lg:text-[24px] font-light">TRPIS DONE</h1>
+      </div>
+      <div class="w-full px-4 py-10 lg:w-1/2 xl:w-1/3">
+        <h1 class="text-center text-white text-[42px] lg:text-[72px] font-semibold">321</h1>
+        <h1 class="text-center text-white text-[16px] lg:text-[24px] font-light">EVENTS</h1>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Testimonials Section Start -->
+<section id="fleet" class="py-20 bg-[#F8D7A4]">
+  <div class="container">
+    <div class="w-full px-4">
+      <div class="mx-auto mb-16 text-center">
+        <h1 class="font-lora font-semibold text-[32px] lg:text-[56px] text-[#A55C30]">Testimonials</h1>
+      </div>
+    </div>
+    <div class="flex">
+      <div class="w-full px-4 py-4">
+        <div class="flex flex-col p-10 bg-white shadow-lg lg:flex-row-reverse rounded-xl">
+          <div class="w-full">
+            <p class="font-light text-center lg:w-[600px] mx-auto text-[14px] lg:text-[24px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mattis dui nec massa enim scelerisque scelerisque maecenas lectus. Tincidunt posuere nunc at amet, in. Enim ullamcorper lectus viverra donec. At faucibus nunc vel viverra massa malesuada leo iaculis tellus.</p>
+            <img src="dist/img/start.svg" alt="" class="pt-10 mx-auto w-[94px] lg:w-[190px]">
+          </div>
+          <div class="w-1/2 pt-10 mx-auto text-center lg:pt-0">
+            <img src="dist/img/Woman.svg" alt="Mechanical Keyboard" class="mx-auto" width="160px">
+          <h1 class="pt-5 lg:text-[32px] text-[20px] font-semibold">Annie Rudy</h1>
+          <p class="text-[14px] lg:text-[24px] font-extralight">Las Vegas</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Testimonials Section End -->
+
+<!-- Services Section Start -->
+<section id="services" class="bg-center bg-cover" style="background-image: url('dist/img/Rectangle\ 3.png'); background-repeat: no-repeat;">
+  <div class="w-full bg-black opacity-[91%] py-16">
+    <div class="text-center text-white">
+      <p class="text-[20px] lg:text-[32px]">We offer the best you can imagine</p>
+      <h1 class="text-[32px] lg:text-[56px] font-semibold pt-10 lg:pt-0">Call Now for booking 01477 678905 </h1>
+    </div>
+  </div>
+</section>
+<!-- Services Section End -->
+
+<!-- Contact Section Start -->
+<section id="contact" class="py-20">
+  <div class="container">
+    <div class="w-full px-4">
+      <div class="max-w-xl mx-auto mb-16 text-center">
+        <h1 class="font-lora font-semibold text-[32px] lg:text-[56px] text-[#A55C30]">Contact</h1>
+      </div>
+    </div>
+    <form class="bg-[#E8EAEC] lg:mx-56 lg:p-32 py-8">
+      <div class="w-full lg:w-2/3 lg:mx-auto">
+        <div class="w-full px-4 mb-8">
+          <input type="text" id="name" class="w-full p-3 text-dark focus:outline-none focus:ring-[#A55C30] focus:ring-1 focus:border-[#A55C30] placeholder:italic" placeholder="Your Name">
+        </div>
+        <div class="w-full px-4 mb-8">
+          <input type="text" id="name" class="w-full p-3 text-dark focus:outline-none focus:ring-[#A55C30] focus:ring-1 focus:border-[#A55C30] placeholder:italic" placeholder="Email">
+        </div>
+        <div class="w-full px-4 mb-8">
+          <input type="text" id="name" class="w-full p-3 text-dark focus:outline-none focus:ring-[#A55C30] focus:ring-1 focus:border-[#A55C30] placeholder:italic" placeholder="Type of car">
+        </div>
+        <div class="w-full px-4 mb-8">
+          <textarea id="message" class="w-full h-32 p-3 text-dark focus:outline-none focus:ring-[#A55C30] focus:ring-1 focus:border-[#A55C30] placeholder:italic" placeholder="Your Details"></textarea>
+        </div>
+        <div class="flex justify-center">
+          <button class="lg:w-1/2 px-8 py-3 font-semibold text-white transition duration-500 bg-[#A55C30] hover:opacity-80 hover:shadow-lg">Kirim</button>
+        </div>
+      </div>
+    </form>
+  </div>
+</section>
+<!-- Contact Section End -->
+
+<!-- Footer Start -->
+<footer class="bg-[#0C0C0C]">
+  <div class="container">
+    <div class="flex flex-wrap pt-12">
+      <div class="w-[250px] mx-auto lg:px-10 text-center lg:text-start text-white lg:w-1/3">
+        <a href="#home" class="font-lora text-[32px] text-[#A55C30]"><span class="font-bold">Lux</span>Chaffeur</a>
+        <p class="pt-6 text-[16px] font-light">We are known for luxurious and premium chaffeur services worldwide. We are simply the best you can find.</p>
+        <p class="pt-3 mb-20 text-[16px] font-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem consectetur sagittis auctor</p>
+      </div>
+      <div class="w-[270px] mx-auto md:pt-0 lg:w-1/3 text-center">
+        <h3 class="text-[24px] font-semibold text-[#A55C30]">News Letter</h3>
+        <p class="text-[16px] text-white font-light pt-6">Subscribe to our news letter for updates, news and exclusive offers</p>
+        <div class="justify-around pt-6 mb-20 lg:flex">
+          <input type="text" id="name" class="p-3 mb-5 lg:mb-0 text-dark focus:outline-none focus:ring-[#A55C30] focus:ring-1 focus:border-[#A55C30]" placeholder="Email">
+          <button class="py-3 font-semibold text-white transition duration-500 bg-[#A55C30] hover:opacity-80 hover:shadow-lg px-8">Subscribe</button>
+        </div>
+      </div>
+      <div class="w-[290px] mx-auto mb-20 lg:w-1/3 lg:px-16">
+        <h3 class="mb-5 text-[24px] font-semibold text-[#A55C30] text-center">Contact</h3>
+        <ul class="text-slate-300">
+          <li class="flex items-center w-full">
+            <a href="https://youtube.com/" target="_blank" class="mx-3 w-[24px]">
+              <i class="fas fa-map-marker-alt"></i>
+            </a>
+            <a href="#home" class="mx-3">2038 2nd Avenue, 
+              Las Vegas, United States</a>
+          </li>
+          <li class="flex items-center w-full py-6">
+            <a href="https://youtube.com/" target="_blank" class="mx-3 w-[24px]">
+              <i class="fas fa-phone"></i>
+            </a>
+            <a href="#home" class="mx-3">01477 342123<br> 01477 678905</a>
+          </li>
+          <li class="flex items-center w-full">
+            <a href="https://youtube.com/" target="_blank" class="mx-3 w-[24px]">
+              <i class="fas fa-envelope"></i>
+            </a>
+            <a href="#home" class="mx-3">info@luxchauffeur.com</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="w-full">
+      <div class="flex items-center justify-center mb-5">
+        <div class="flex items-center">
+          <!-- Facebook -->
+          <a href="https://facebook.com/" target="_blank" class="flex items-center justify-center mr-10 text-slate-300 hover:text-white">
+            <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" width="30" class="fill-current"><title>Facebook</title><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+          </a>
+          <!-- Twitter -->
+          <a href="https://twitter.com/" target="_blank" class="flex items-center justify-center mr-10 text-slate-300 hover:text-white">
+            <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" width="30" class="fill-current"><title>Twitter</title><path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/></svg>
+          </a>
+          <!-- Instagram -->
+          <a href="https://instagram.com/" target="_blank" class="flex items-center justify-center text-slate-300 hover:text-white">
+            <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" width="30" class="fill-current">
+              <title>Instagram</title>
+              <path d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+      <p class="text-center text-[12px] text-white border-t py-7 border-slate-700">
+        © Copyright 2020 · LuxChauffeur All rights reserved 
+      </p>
+    </div>
+  </div>
+</footer>
+<!-- Footer End -->
+
+
+ 
+ <script src="dist/js/script.js"></script>
+</body>
+</html>
