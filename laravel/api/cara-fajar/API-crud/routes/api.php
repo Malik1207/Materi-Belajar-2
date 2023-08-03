@@ -32,4 +32,6 @@ Route::middleware(['auth:sanctum'])->group(function() {
     Route::get('/get-data-user', [AuthController::class, 'getDataUser']);
 
     Route::post('/posts', [PostController::class, 'store']);
+    Route::patch('/posts/{id}', [PostController::class, 'update'])->middleware('author');
+    Route::delete('/posts/{id}', [PostController::class, 'destroy'])->middleware('author');
 });
